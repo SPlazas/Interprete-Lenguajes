@@ -1,5 +1,0 @@
-function moveRotate(var angle, var dist):
-rotate_right angle
-move_forward dist
-endfunction
-
