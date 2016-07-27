@@ -1,0 +1,35 @@
+function moveRotate(var angle,var dist):
+rotate_right angle
+move_forward dist
+endfunction
+
+function makeHorizontalLine():
+pen_color 0,0,0,0
+move_forward 50
+move_backward 100
+rotate_left 180
+pen_color 255,255,255,255
+move_forward 100
+rotate_left 180
+pen_color 0,0,0,0
+move_forward 50
+endfunction
+
+var a = 0 
+while (a < 3) do
+	println a
+	a = a + 1
+endwhile
+
+if (a == 3 + 2 * (8-1)) then
+	println "hola"
+endif
+
+makeHorizontalLine()
+pen_color 255,255,255,255
+rotate_right 90
+move_forward 200
+moveRotate(45,50)
+moveRotate(45,50)
+moveRotate(45,50)
+moveRotate(45,50)
